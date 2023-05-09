@@ -1,0 +1,33 @@
+package in.ineuron.Controller;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class TestController {
+
+	@GetMapping
+	public String showHome() {
+		
+		return "home";
+	}
+	
+	@GetMapping("/report")
+	public String showReport(Map<String,Object>model) {
+		
+		model.put("name","Kohli" );
+		model.put("age",49);
+		model.put("address", "RCB");
+		
+		String[] countries=new String[] {"IND","USA","RUS","UK"};
+		model.put("countries",countries);
+		
+		
+		return "show_report";
+		
+	}
+	
+	
+}

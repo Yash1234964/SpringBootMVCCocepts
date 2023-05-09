@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Output Page</title>
+</head>
+<body>
+<center>
+<h1 style='color:red; text-align:center'>Display Page</h1>
+<h1>Name is :: ${name}</h1>
+<h1>Name is :: ${age}</h1>
+<h1>Name is :: ${address}</h1>
+
+<h1 style='color:red; text-align:center'>Displaying Array Values</h1>
+
+
+</center>
+</body>
+</html>
